@@ -55,8 +55,9 @@ O handler são as regras do porteiro
 
 <img src='./img/Proxy.png' style="display: block; margin: 0 auto; border-radius: 15px;">
 
+---
 
-## Participantes
-Beatriz Vizeu N°1/
-Eloá Florêncio N°3/
+## Participantes  
+Beatriz Vizeu N°1  
+Eloá Florêncio N°3  
 Laila Casadei N°15
