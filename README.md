@@ -57,6 +57,6 @@ O handler são as regras do porteiro
 
 
 ## Participantes
-Beatriz Vizeu N°1
-Eloá Florêncio N°3
+Beatriz Vizeu N°1/
+Eloá Florêncio N°3/
 Laila Casadei N°15
