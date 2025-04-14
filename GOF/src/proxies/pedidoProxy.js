@@ -1,19 +1,24 @@
-const Pedido = require('../models/builderPedido');
+class Pedido {
 
-class PedidoProxy {
+    itens = [];
+
     constructor(id, cliente) {
-        this.pedido = new Pedido(id, cliente);
+        this.id = id;
+        this.cliente = cliente;
+        this.data = new Date();
     }
 
     addItem(item) {
-        console.log('Proxy: Adicionando item ao pedido');
-        this.pedido.addItem(item);
+        this.itens.push(item);
     }
-
     getPedido() {
-        console.log('Proxy: Retornando pedido');
-        return this.pedido;
+        return {
+            id: this.id,
+            cliente: this.cliente,
+            data: this.data,
+            itens: this.itens,
+        };
     }
 }
 
-module.exports = PedidoProxy;
+module.exports = Pedido;

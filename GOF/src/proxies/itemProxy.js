@@ -1,14 +1,26 @@
-const Item = require('../models/builderItem');
-
-class ItemProxy {
+class Item {
     constructor(id, produto, preco, quantidade) {
-        this.item = new Item(id, produto, preco, quantidade);
+        this.id = id;
+        this.produto = produto;
+        this.preco = preco;
+        this.quantidade = quantidade;
+        this.subtotal = this.calcularSubtotal();
     }
 
+    calcularSubtotal() {
+        return this.preco * this.quantidade;
+    }
+
+    // Adicionando o método getItem
     getItem() {
-        console.log('Proxy: Retornando item');
-        return this.item;
+        return {
+            id: this.id,
+            produto: this.produto,
+            preco: this.preco,
+            quantidade: this.quantidade,
+            subtotal: this.subtotal,
+        };
     }
 }
 
-module.exports = ItemProxy;
+module.exports = Item;

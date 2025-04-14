@@ -10,5 +10,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/pedidos', Pedido.createItem);
+router.get('/pedidos', Pedido.readPedido);
 
 module.exports = router;

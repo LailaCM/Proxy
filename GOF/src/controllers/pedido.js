@@ -2,7 +2,7 @@ const PedidoProxy = require('../proxies/pedidoProxy');
 const ItemProxy = require('../proxies/itemProxy');
 
 const readPedido = async (req, res) => {
-    const { cliente } = req.body;
+    const { cliente } = req.query;
     const pedidoProxy = new PedidoProxy(1, cliente);
     const pedido = pedidoProxy.getPedido();
     res.json(pedido);
